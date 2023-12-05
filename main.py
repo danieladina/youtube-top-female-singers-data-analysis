@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-api_key = 'AIzaSyBHEeMTq_7a33a88fd-D3cW5Bmnb1Xmd84'
+api_key = 'Enter your api key here'
 channel_id = 'UCKEImtWikw9usC1pl_9m1nQ'
 channel_ids = ['UC-J-KZfRV8c13fOCkhXdLiQ',#dua lipa
                 'UCOCgB3xd-B-1qAm-hR9OLrA',#helsay
