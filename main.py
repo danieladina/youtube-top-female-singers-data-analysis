@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-api_key = 'Enter your api key here'
+api_key = 'enter your api key'
 channel_id = 'UCKEImtWikw9usC1pl_9m1nQ'
 channel_ids = ['UC-J-KZfRV8c13fOCkhXdLiQ',#dua lipa
                 'UCOCgB3xd-B-1qAm-hR9OLrA',#helsay
@@ -168,7 +168,8 @@ top10_videos = video_data.sort_values(by='Views', ascending=False).head(10)
 pd.set_option('display.max_rows', None)  # Set to None to display all rows
 pd.set_option('display.max_columns', None)  # Set to None to display all columns
 print(top10_videos)
-
+plt.figure(figsize=(4, 4))
+plt.subplots_adjust(left=0.3)
 ax1 = sns.barplot(x='Views', y='Title', data=top10_videos)
 plt.show()
 
@@ -204,4 +205,4 @@ plt.tight_layout()  # Adjusts subplot parameters to give specified padding
 ax.text(2.5, 50, 'Rihanna loves to release her songs in autumn', ha='center', fontsize=10)
 plt.show()
 
-video_data.to_csv('video_Details(Zara Larsson).csv')
+#video_data.to_csv('video_Details(Zara Larsson).csv')
